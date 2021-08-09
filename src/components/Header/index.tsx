@@ -1,3 +1,12 @@
+import Link from 'next/link';
+import styles from './header.module.scss';
+
 export default function Header() {
-  // TODO
+  return (
+    <Link href="/">
+      <a className={styles.logo}>
+        <img src="/images/logo-desafio.svg" alt="logo" />
+      </a>
+    </Link>
+  );
 }
